@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="controls">
+        <a class="easy" href="javascript:level(0);">EASY</a>
+        <a class="normal active" href="javascript:level(1);">NORMAL</a>
+        <a class="hard" href="javascript:level(2);">HARD</a>
+      </div>
+
+      <div class="tic-tac-toe normal">
+        <label class="box box-1">
+          <input type="checkbox" onchange="changed(this)" data-num="1" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-2">
+          <input type="checkbox" onchange="changed(this)" data-num="2" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-3">
+          <input type="checkbox" onchange="changed(this)" data-num="3" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-4">
+          <input type="checkbox" onchange="changed(this)" data-num="4" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-5">
+          <input type="checkbox" onchange="changed(this)" data-num="5" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-6">
+          <input type="checkbox" onchange="changed(this)" data-num="6" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-7">
+          <input type="checkbox" onchange="changed(this)" data-num="7" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-8">
+          <input type="checkbox" onchange="changed(this)" data-num="8" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+        <label class="box box-9">
+          <input type="checkbox" onchange="changed(this)" data-num="9" />
+          <div class="cross"></div>
+          <div class="circle"></div>
+        </label>
+
+        <div class="overlay"></div>
+        <div class="msg">
+          <span class="win">YOU WIN!</span>
+          <span class="lost">YOU LOST!</span>
+          <span class="draw">DRAW!</span>
+        </div>
+      </div>
+      <a class="replay" href="javascript:replay();">REPLAY</a>
+    </div>
+  </body>
+</html>
